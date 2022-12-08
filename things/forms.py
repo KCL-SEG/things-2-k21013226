@@ -11,13 +11,3 @@ class ThingForm(forms.Form):
     name = forms.CharField(label = "Enter Name",max_length=35)
     description = forms.CharField(widget=forms.Textarea)
     quantity =  forms.IntegerField(label = "Enter Quantity",validators=[MinValueValidator(0),MaxValueValidator(50)])
-
-
-    
-
-
-
-#The form must accept valid inputs for Thing and reject invalid input for Thing.
-
-#The description field must be displayed as a Textarea. The quantity field must be displayed as NumberInput.
-
