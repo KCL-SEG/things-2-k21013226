@@ -9,7 +9,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 class ThingForm(forms.Form):
     name = forms.CharField(label = "Enter Name",max_length=35)
-    description = forms.CharField(widget=forms.Textarea[maxlength=="120"])
+    description = forms.CharField(widget=forms.Textarea[max_length =="120"])
     quantity =  forms.IntegerField(label = "Enter Quantity",validators=[MinValueValidator(0),MaxValueValidator(50)])
 
 #with_asserts.context_manager.SelectorNotFound: No selector matches found for textarea[maxlength="120"]
