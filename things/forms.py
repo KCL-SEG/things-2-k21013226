@@ -6,7 +6,6 @@
 from django import forms
 from django.core.validators import MinValueValidator, MaxValueValidator
 
-description = models.CharField(max_length=120, blank=True)
 
 class ThingForm(forms.Form):
     name = forms.CharField(label = "Enter Name",max_length=35)
